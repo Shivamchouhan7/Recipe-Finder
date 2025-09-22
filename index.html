@@ -1,0 +1,148 @@
+<!--Home Page for Recipe Finder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+</head>
+<body >
+    <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="nav-left">
+    <h2>🍴 Recipe Finder</h2>
+  </div>
+  <div class="nav-center">
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="recipes.html" >Recipes</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <input type="text" id="navSearchInput" placeholder="Search recipes..." class="nav-search">
+    <button id="navSearchBtn" class="nav-search-btn">🔍</button>
+  </div>
+</nav>
+
+
+
+    
+  <!-- Header -->
+  <header>
+    <h1>🍳 Interactive Recipe Finder</h1>
+    <p>Enter ingredients and discover recipes!</p>
+  </header>
+
+  <!-- Search & Filters -->
+  <section>
+    <h2>Search Recipes😋</h2>
+    <form>
+      <label for="ingredientInput"><b>Ingredients:</b></label>
+      <input type="text" id="ingredientInput" placeholder="Enter ingredients (comma separated)">
+
+      <label for="cuisineSelect"><b>Cuisine:</b></label>
+      <select id="cuisineSelect">
+        <option value="">All Cuisines</option>
+        <option value="Indian">Indian</option>
+        <option value="Italian">Italian</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Mexican">Mexican</option>
+        <option value="American">American</option>
+      </select>
+
+      <label for="timeSelect"><b>Cooking Time:</b></label>
+      <select id="timeSelect">
+        <option value="">Any Time</option>
+        <option value="15">≤ 15 mins</option>
+    <option value="20">≤ 20 mins</option>
+    <option value="25">≤ 25 mins</option>
+    <option value="30">≤ 30 mins</option>
+    <option value="40">≤ 40 mins</option>
+    <option value="50">≤ 50 mins</option>
+        <option value="60">≤ 60 mins</option>
+      </select>
+
+      <button  class="search-button"type="button">Search</button>
+    </form>
+  </section>
+  
+  <!-- Popular Recipes -->
+<section class="popular-recipes">
+  <h2>🔥 Popular Recipes</h2>
+  <div class="popular-grid">
+    
+    <article class="popular-card" data-recipe-id="paneer-butter-masala">
+      <img class="recipe-img" src="https://images.unsplash.com/photo-1690401767645-595de0e0e5f8?q=80&w=2026&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Paneer Butter Masala">
+      <h3>Paneer Butter Masala</h3>
+      <p>Rich, creamy Indian curry with paneer & spices.</p>
+      <button class="view-recipe-btn" data-id="paneer-butter-masala" >View Recipe</button>
+    </article>
+
+    <article class="popular-card" data-recipe-id="pasta-arrabiata">
+      <img class="recipe-img" src="https://www.recipetineats.com/tachyon/2023/10/Penne-Arrabbiata-2.jpg?resize=900%2C1125&zoom=0.72" alt="Pasta Arrabiata">
+      <h3>Pasta Arrabiata</h3>
+      <p>Spicy Italian pasta tossed in tomato garlic sauce.</p>
+      <button class="view-recipe-btn" data-id="pasta-arrabiata" >View Recipe</button>
+    </article>
+
+    <article class="popular-card" data-recipe-id="tacos">
+      <img class="recipe-img" src="https://upload.wikimedia.org/wikipedia/commons/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg" alt="Mexican Tacos">
+      <h3>Mexican Tacos</h3>
+      <p>Street-style tacos filled with beans & cheese.</p>
+      <button class="view-recipe-btn" data-id="tacos" >View Recipe</button>
+    </article>
+
+    <article class="popular-card" data-recipe-id="pancakes">
+      <img class="recipe-img" src="https://eggs.ca/wp-content/uploads/2024/06/fluffy-pancakes-1664x832-1.jpg" alt="Pancakes">
+      <h3>Fluffy Pancakes</h3>
+      <p>Classic American breakfast topped with syrup.</p>
+      <button class="view-recipe-btn" data-id="pancakes" >View Recipe</button>
+    </article>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>🍴 Recipe Finder</h3>
+      <p>Discover recipes from around the world in one place.</p>
+    </div>
+    
+    <div class="footer-center">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-right">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        
+        <a href="https://www.instagram.com/accounts/login/?hl=en" alt="Instagram"><span><i class="fa-brands fa-instagram"></i></span></a>
+        <a href="https://x.com/i/flow/login?lang=en" alt="Twitter"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+        <a href="https://www.facebook.com/" alt="Facebook"><span><i class="fa-brands fa-facebook"></i></span></a>
+      </div>
+    </div>
+  </div>
+  
+  <p>&copy; <span id="year"></span> Recipe Finder | Crafted with ❤️ by Shivam Chouhan</p>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</footer>
+
+
+</body>
+<script src="script.js"></script>
+</html>
