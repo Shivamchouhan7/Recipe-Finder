@@ -34,13 +34,14 @@ Static Recipe Finder Website | IBM Project | HTML, CSS, JavaScript
 git clone https://github.com/Shivamchouhan7/IBM-Project-Recipe-Finder.git
 
 
-
+```
 2. Navigate to the project folder:
+```bash
 cd IBM-Project-Recipe-Finder
 
-
+```
 3. Open index.html in your browser to view the website.
-
+---
 🤝 Contributing
 Contributions are welcome!
 
