@@ -1,0 +1,126 @@
+<!-- About Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+
+  <nav class="navbar">
+    <div class="nav-left"><h2>🍴 Recipe Finder</h2></div>
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <input id="navSearchInput" class="nav-search" type="text" placeholder="Search recipes...">
+      <button id="navSearchBtn" class="nav-search-btn">🔍</button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header style="padding:28px 20px; text-align:center;">
+    <h1 style="margin:0; font-size:2rem; color:#ffe5d9;">About Recipe Finder</h1>
+    <p style="margin:8px 0 0; color:#ffddc1;">Simple, friendly, and delicious — discover recipes tailored to you.</p>
+  </header>
+
+  <!-- CARDS WRAPPER -->
+  <main class="about-cards-wrapper">
+    <!-- About Card -->
+    <article class="about-card">
+      <div class="about-card-media" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop')"></div>
+      <div class="about-card-body">
+        <h2>What is Recipe Finder?</h2>
+        <p>
+          Recipe Finder is your go-to destination for discovering delicious recipes quickly and easily.
+          We bring together global flavours and everyday ingredients so you can cook with confidence—
+          whether you're a beginner or a seasoned home cook.
+        </p>
+      </div>
+    </article>
+
+    <!-- Mission Card -->
+    <article class="about-card">
+      <div class="about-card-body">
+        <h2>Our Mission</h2>
+        <p>
+          At Recipe Finder we aim to make cooking simple, fun, and accessible for everyone. You don’t need
+          a chef’s training—just curiosity and a love for good food. From 15-minute meals to comforting classics,
+          we help you find recipes based on ingredients, cuisine, and time.
+        </p>
+        <ul class="mission-points">
+          <li>Quick & practical recipes</li>
+          <li>Search by ingredients</li>
+          <li>Inclusive, easy-to-follow instructions</li>
+        </ul>
+      </div>
+      <div class="about-card-media" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1512058564366-c9e3c7f3d0b8?q=80&w=1200&auto=format&fit=crop')"></div>
+    </article>
+
+    <!-- Creator Card -->
+    <article class="about-card about-creator">
+      <div class="about-card-media" aria-hidden="true" style="background-image:url(hello.jpg)"></div>
+      <div class="about-card-body">
+        <h2>Meet the Creator</h2>
+        <p>
+          Hi 👋 I’m <strong>Shivam Chouhan</strong>, the creator of Recipe Finder. As a tech enthusiast and foodie,
+          I built this project to make discovering and trying new recipes effortless.
+          I hope Recipe Finder inspires you to explore new flavors and enjoy cooking.
+        </p>
+
+        <div class="creator-meta">
+          <p><strong>Location:</strong> India</p>
+          <p><strong>Built with:</strong> HTML • CSS • JavaScript</p>
+        </div>
+
+        <a class="cta-link" href="#" target="_blank" rel="noopener noreferrer">View project on GitHub</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>🍴 Recipe Finder</h3>
+      <p>Discover recipes from around the world in one place.</p>
+    </div>
+    
+    <div class="footer-center">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html" >About</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-right">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        
+        <a href="https://www.instagram.com/accounts/login/?hl=en" alt="Instagram"><span><i class="fa-brands fa-instagram"></i></span></a>
+        <a href="https://x.com/i/flow/login?lang=en" alt="Twitter"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+        <a href="https://www.facebook.com/" alt="Facebook"><span><i class="fa-brands fa-facebook"></i></span></a>
+      </div>
+    </div>
+  </div>
+  
+  <p>&copy; <span id="year"></span> Recipe Finder | Crafted with ❤️ by Shivam Chouhan</p>
+  
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+<script src="script.js"></script>
+</html>
