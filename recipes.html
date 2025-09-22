@@ -1,0 +1,174 @@
+<!-- Recipe Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Recipes | Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>🍴 Recipe Finder</h2>
+    </div>
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <input type="text" placeholder="Search recipes..." class="nav-search">
+      <button class="nav-search-btn">🔍</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="recipes-section">
+      <h2 class="section-title">Recipe Results</h2>
+      <div class="recipes-grid">
+        
+        <!-- Indian -->
+        <article class="recipe-card" data-recipe-id="paneer-butter-masala">
+          <img class="recipe-img" src="https://images.unsplash.com/photo-1690401767645-595de0e0e5f8?q=80&w=2026&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Paneer Butter Masala">
+          <h3>Paneer Butter Masala</h3>
+          <p><strong>Cuisine:</strong> Indian</p>
+          <p><strong>Cooking Time:</strong> 40 mins</p>
+          <p><strong>Ingredients:</strong> Paneer, Tomato, Cream, Spices</p>
+          <button class="view-recipe-btn">View Recipe</button>
+        </article>
+
+        <article class="recipe-card" data-recipe-id="veg-biryani">
+          <img class="recipe-img" src="https://images.unsplash.com/photo-1630409346824-4f0e7b080087?q=80&w=1246&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Veg Biryani">
+          <h3>Veg Biryani</h3>
+          <p><strong>Cuisine:</strong> Indian</p>
+          <p><strong>Cooking Time:</strong> 50 mins</p>
+          <p><strong>Ingredients:</strong> Rice, Vegetables, Spices</p>
+          <button class="view-recipe-btn">View Recipe</button>
+        </article>
+
+        <!-- Italian -->
+        <article class="recipe-card" data-recipe-id="pasta-arrabiata">
+          <img class="recipe-img" src="https://www.recipetineats.com/tachyon/2023/10/Penne-Arrabbiata-2.jpg?resize=900%2C1125&zoom=0.72" alt="Pasta Arrabiata">
+          <h3>Pasta Arrabiata</h3>
+          <p><strong>Cuisine:</strong> Italian</p>
+          <p><strong>Cooking Time:</strong> 30 mins</p>
+          <p><strong>Ingredients:</strong> Pasta, Tomato, Garlic, Olive Oil</p>
+          <button class="view-recipe-btn">View Recipe</button>
+        </article>
+
+        <article class="recipe-card" data-recipe-id="margherita-pizza">
+          <img class="recipe-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Pizza_Margherita_stu_spivack.jpg" alt="Margherita Pizza">
+          <h3>Margherita Pizza</h3>
+          <p><strong>Cuisine:</strong> Italian</p>
+          <p><strong>Cooking Time:</strong> 25 mins</p>
+          <p><strong>Ingredients:</strong> Dough, Tomato, Cheese, Basil</p>
+          <button class="view-recipe-btn">View Recipe</button>
+        </article>
+
+        <!-- Chinese -->
+        <article class="recipe-card" data-recipe-id="veg-fried-rice">
+          <img class="recipe-img" src="https://shwetainthekitchen.com/wp-content/uploads/2023/06/veg-fried-rice.jpg" alt="Veg Fried Rice">
+          <h3>Veg Fried Rice</h3>
+          <p><strong>Cuisine:</strong> Chinese</p>
+          <p><strong>Cooking Time:</strong> 20 mins</p>
+          <p><strong>Ingredients:</strong> Rice, Carrot, Peas, Soy Sauce</p>
+          <button class="view-recipe-btn">View Recipe</button>
+        </article>
+
+        <article class="recipe-card" data-recipe-id="hakka-noodles">
+          <img class="recipe-img" src="https://purendesi.in/wp-content/uploads/2024/05/Hakka-Noodles-Recipe.jpg" alt="Hakka Noodles">
+          <h3>Hakka Noodles</h3>
+          <p><strong>Cuisine:</strong> Chinese</p>
+          <p><strong>Cooking Time:</strong> 25 mins</p>
+          <p><strong>Ingredients:</strong> Noodles, Capsicum, Soy Sauce</p>
+          <button class="view-recipe-btn">View Recipe</button>
+        </article>
+
+        <!-- Mexican -->
+        <article class="recipe-card" data-recipe-id="tacos">
+          <img class="recipe-img" src="https://upload.wikimedia.org/wikipedia/commons/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg" alt="Tacos">
+          <h3>Mexican Tacos</h3>
+          <p><strong>Cuisine:</strong> Mexican</p>
+          <p><strong>Cooking Time:</strong> 20 mins</p>
+          <p><strong>Ingredients:</strong> Tortilla, Beans, Lettuce, Cheese</p>
+          <button class="view-recipe-btn">View Recipe</button>
+        </article>
+
+        <article class="recipe-card" data-recipe-id="loaded-nachos">
+          <img class="recipe-img" src="https://www.seriouseats.com/thmb/ps9BzTDAJ6tXywJw_eSZxvV_xhE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20250430-SEA-UltimateSmokedNachos-LorenaMasso-Beauty1-35-a0d81f942b394edf9137f9b2f09269a4.jpg" alt="Loaded Nachos">
+          <h3>Loaded Nachos</h3>
+          <p><strong>Cuisine:</strong> Mexican</p>
+          <p><strong>Cooking Time:</strong> 15 mins</p>
+          <p><strong>Ingredients:</strong> Nachos, Cheese, Jalapenos, Beans</p>
+          <button class="view-recipe-btn">View Recipe</button>
+        </article>
+
+        <!-- American -->
+        <article class="recipe-card" data-recipe-id="cheese-burger">
+          <img class="recipe-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7W-OoBPna7eKpB2sL4xsQOAuX0QRbgqcAqA&s" alt="Cheese Burger">
+          <h3>Cheese Burger</h3>
+          <p><strong>Cuisine:</strong> American</p>
+          <p><strong>Cooking Time:</strong> 25 mins</p>
+          <p><strong>Ingredients:</strong> Bun, Patty, Cheese, Lettuce</p>
+          <button class="view-recipe-btn">View Recipe</button>
+        </article>
+
+        <article class="recipe-card" data-recipe-id="pancakes">
+          <img class="recipe-img" src="https://eggs.ca/wp-content/uploads/2024/06/fluffy-pancakes-1664x832-1.jpg" alt="Pancakes">
+          <h3>Pancakes</h3>
+          <p><strong>Cuisine:</strong> American</p>
+          <p><strong>Cooking Time:</strong> 15 mins</p>
+          <p><strong>Ingredients:</strong> Flour, Milk, Eggs, Syrup</p>
+          <button class="view-recipe-btn">View Recipe</button>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>🍴 Recipe Finder</h3>
+      <p>Discover recipes from around the world in one place.</p>
+    </div>
+    
+    <div class="footer-center">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-right">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="https://www.instagram.com/accounts/login/?hl=en" alt="Instagram"><span><i class="fa-brands fa-instagram"></i></span></a>
+        <a href="https://x.com/i/flow/login?lang=en" alt="Twitter"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+        <a href="https://www.facebook.com/" alt="Facebook"><span><i class="fa-brands fa-facebook"></i></span></a>
+      </div>
+    </div>
+  </div>
+  
+  <p>&copy; <span id="year"></span> Recipe Finder | Crafted with ❤️ by Shivam Chouhan</p>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>
