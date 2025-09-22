@@ -3,7 +3,7 @@ Static Recipe Finder Website | IBM Project | HTML, CSS, JavaScript
 
 # 🍽️ Recipe Finder
 
-**Project Link**: *()*  
+**Project Link**: **  
 **Description**: At Recipe Finder, we aim to make cooking simple, fun, and accessible for everyone. You don’t need a chef’s training—just curiosity and a love for good food. From 15-minute meals to comforting classics, we help you find recipes based on ingredients, cuisine, and time.
 
 ---
@@ -45,13 +45,13 @@ cd IBM-Project-Recipe-Finder
 🤝 Contributing
 Contributions are welcome!
 
-Fork the repository
-Create a new branch 
-Make your changes and commit (git commit -m 'Add feature')
-Push to the branch (git push origin main)
-Open a Pull Request
+- Fork the repository
+- Create a new branch 
+- Make your changes and commit (git commit -m 'Add feature')
+- Push to the branch (git push origin main)
+- Open a Pull Request
 
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Thanks for visiting this repo!
+## Thanks for visiting this repo!
