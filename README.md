@@ -3,7 +3,7 @@ Static Recipe Finder Website | IBM Project | HTML, CSS, JavaScript
 
 # 🍽️ Recipe Finder
 
-**Project Link**: **  
+**Project Link**: *https://github.com/Shivamchouhan7/Recipe-Finder*  
 **Description**: At Recipe Finder, we aim to make cooking simple, fun, and accessible for everyone. You don’t need a chef’s training—just curiosity and a love for good food. From 15-minute meals to comforting classics, we help you find recipes based on ingredients, cuisine, and time.
 
 ---
@@ -37,7 +37,7 @@ git clone https://github.com/Shivamchouhan7/IBM-Project-Recipe-Finder.git
 ```
 2. Navigate to the project folder:
 ```bash
-cd IBM-Project-Recipe-Finder
+cd Recipe-Finder
 
 ```
 3. Open index.html in your browser to view the website.
